@@ -22,8 +22,8 @@ if not groq_api_key:
 
 print(f"GROQ_API_KEY: {groq_api_key}")
 
-groq_client = groq.Client()  # Initialize without the api_key argument
-groq_client.api_key = groq_api_key  # Manually set the API key
+# Pass the API key directly during initialization
+groq_client = groq.Client(api_key=groq_api_key)
 
 @app.route('/analyze', methods=['POST'])
 def analyze_typing():
