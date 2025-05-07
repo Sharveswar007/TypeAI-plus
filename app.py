@@ -1,4 +1,5 @@
 # Import necessary modules
+from dotenv import load_dotenv  # For loading environment variables from a .env file
 from flask import Flask, request, jsonify  # Flask framework for web app
 from flask_cors import CORS  # Enable Cross-Origin Resource Sharing
 import os  # For environment variable access and file operations
@@ -6,9 +7,6 @@ import groq  # For interacting with the Groq API
 import time  # For time-related operations (if needed)
 from dotenv import load_dotenv  # For loading environment variables from a .env file
 import shutil  # For file operations (used later in the script)
-
-# Load environment variables
-load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
