@@ -1,5 +1,4 @@
 # Import necessary modules
-from dotenv import load_dotenv  # For loading environment variables from a .env file
 from flask import Flask, request, jsonify  # Flask framework for web app
 from flask_cors import CORS  # Enable Cross-Origin Resource Sharing
 import os  # For environment variable access and file operations
