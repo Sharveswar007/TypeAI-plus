@@ -12,7 +12,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Initialize Groq client
-groq_api_key = "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"  # Replace with your actual API key
+groq_api_key = "Enter your own Groq API key"  # Replace with your actual API key
 
 if not groq_api_key:
     raise ValueError("GROQ_API_KEY is not set")
